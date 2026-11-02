@@ -101,7 +101,7 @@ async def handle_message(
 def main():
     if not TELEGRAM_TOKEN or not GEMINI_API_KEY:
         raise RuntimeError(
-            "global client
+            "global client")
 client = genai.Client(api_key=GEMINI_API_KEY)."
         )
 
