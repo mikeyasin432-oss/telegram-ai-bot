@@ -75,7 +75,7 @@ async def handle_message(
 
     try:
         response = client.models.generate_content(
-            model=MODEL_NAME,gemini- 2.5 -flash 
+            model=MODEL_NAME,
             contents=question,
             config={
                 "system_instruction": SYSTEM_INSTRUCTION,
