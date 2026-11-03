@@ -14,7 +14,7 @@ from google import genai
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
-MODEL_NAME = "gemini-3.8-flash"
+MODEL_NAME = "gemini-2.5-flash"
 
 # Logging
 logging.basicConfig(
@@ -37,7 +37,7 @@ Your responsibilities:
 4. Answer general knowledge and everyday questions.
 5. Help students prepare for examinations using MCQs.
 6. Explain difficult concepts using simple English.
-
+7. Answer every question about clinical laboratory 
 Be accurate, clear, educational, and honest.
 Never invent laboratory results, references, or medical facts.
 If uncertain, say so.
@@ -60,8 +60,7 @@ async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "• Request explanations.\n"
         "• Practice MCQs.\n"
         "• Ask general questions.\n\n"
-        "Just type your question!"
-    )
+        "Just type your question!" 
 
 async def handle_message(
     update: Update,
@@ -76,7 +75,7 @@ async def handle_message(
 
     try:
         response = client.models.generate_content(
-            model=MODEL_NAME,gemini-3.8-flash 
+            model=MODEL_NAME,gemini- 2.5 -flash 
             contents=question,
             config={
                 "system_instruction": SYSTEM_INSTRUCTION,
