@@ -54,13 +54,13 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     )
 
 async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text(
+    await update.message.reply_text (
         "How can I help?\n\n"
         "• Ask laboratory science questions.\n"
         "• Request explanations.\n"
         "• Practice MCQs.\n"
         "• Ask general questions.\n\n"
-        "Just type your question!" 
+        "Just type your question!" )
 
 async def handle_message(
     update: Update,
