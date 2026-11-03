@@ -1,4 +1,3 @@
-
 import os
 import logging
 from telegram import Update
@@ -15,7 +14,7 @@ from google import genai
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
-MODEL_NAME = "gemini-2.5-flash"
+MODEL_NAME = "gemini-3.8-flash"
 
 # Logging
 logging.basicConfig(
@@ -77,7 +76,7 @@ async def handle_message(
 
     try:
         response = client.models.generate_content(
-            model=MODEL_NAME,
+            model=MODEL_NAME,gemini-3.8-flash 
             contents=question,
             config={
                 "system_instruction": SYSTEM_INSTRUCTION,
@@ -85,9 +84,9 @@ async def handle_message(
             },
         )
 
-        answer = response.text or "I couldn't generate an answer. Please try again."
+        answer = response.text or "generate an answer based on laboratorytechniques."
 
-        # Telegram message limit is 4096 characters
+        laboratory science knowledge,technical 
         for i in range(0, len(answer), 4000):
             await update.message.reply_text(answer[i:i + 4000])
 
