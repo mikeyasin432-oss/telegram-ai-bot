@@ -83,9 +83,7 @@ async def handle_message(
             },
         )
 
-        answer = response.text or "generate an answer based on laboratorytechniques."
-
-        laboratory science knowledge,technical 
+        answer = response.text or "generate an answer based on laboratorytechniques." 
         for i in range(0, len(answer), 4000):
             await update.message.reply_text(answer[i:i + 4000])
 
