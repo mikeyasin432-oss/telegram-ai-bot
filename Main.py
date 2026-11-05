@@ -238,7 +238,7 @@ except ImportError:
             "• Teratozoospermia: abnormal morphology"
         ),
     },
-}
+
 
 
 def format_message(key: str) -> str:
