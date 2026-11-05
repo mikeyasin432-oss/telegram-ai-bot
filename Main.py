@@ -21,7 +21,7 @@ logger = logging.getLogger(__name__)
 BOT_TOKEN = os.environ.get("BOT_TOKEN", "").strip()
 
 # ================= KNOWLEDGE BASE =================
-KNOWLEDGE = {# ---- Merge external topics from lab_data.py if present ----
+KNOWLEDGE = {{# ---- Merge external topics from lab_data.py if present ----
 try:
     from lab_data import EXTRA_KNOWLEDGE
     KNOWLEDGE.update(EXTRA_KNOWLEDGE)
