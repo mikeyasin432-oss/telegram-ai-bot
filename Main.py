@@ -1,3 +1,4 @@
+import re
 import os
 import html
 import logging
