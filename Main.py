@@ -24,9 +24,9 @@ BOT_TOKEN = os.environ.get("BOT_TOKEN", "").strip()
 KNOWLEDGE = {# ---- Merge external topics from lab_data.py if present ----
 try:
     from lab_data import EXTRA_KNOWLEDGE
-    KNOWLEDGE.update(EXTRA_KNOWLEDGE)}
+    KNOWLEDGE.update(EXTRA_KNOWLEDGE)
     logger.info(f"Loaded {len(EXTRA_KNOWLEDGE)} extra topics from lab_data.py")
-except ImportError:
+except ImportError:}
     logger.info("lab_data.py not found — using base topics only")
     "cbc": {
         "title": "🩸 Complete Blood Count (CBC)",
